@@ -1,0 +1,23 @@
+@import "mixin";
+
+$MyColor: #d6d6d6;
+
+body{background-color: $MyColor}
+
+.main{
+  h1{
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  p{
+    @include paraStyle(22px, green);
+  }
+
+  ul{
+    @extend p;
+    text-align: left;
+  }
+}

@@ -1,0 +1,6 @@
+@mixin paraStyle($size, $color) {
+  text-align: center;
+  font-size: $size;
+  font-family: sans-serif;
+  color: complement($color);
+}
